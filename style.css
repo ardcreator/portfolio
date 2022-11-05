@@ -1,14 +1,27 @@
+/** @format */
+
 .jumbotron {
   padding-top: 8rem;
   background-color: #e2edff;
   text-align: center;
 }
 
-
 #projects {
-    background-color: #e2edff;
+  background-color: #e2edff;
 }
 
 section {
-    padding-top: 7rem;
+  padding-top: 7rem;
+}
+
+.gallery-img {
+  width: 100%;
+}
+
+#gallery .row > * {
+  padding: 0;
+}
+
+.navbar-toggler-icon {
+  margin-right: 20px;
 }
