@@ -13,6 +13,9 @@
     <!-- Boostrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 
+    <!-- CSS Animasi -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
 
@@ -20,9 +23,9 @@
   </head>
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #0f52d8">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" data-aos="fade-bottom" data-aos-duration="2000" style="background-color: #0f52d8">
       <div class="container">
-        <a class="navbar-brand" href="#">Ashari Rasyid</a>
+        <a class="navbar-brand" href="#" data-aos="fade-down" data-aos-anchor-placement="top-bottom">Ashari Rasyid</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,13 +34,16 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#home">Halaman Utama</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-aos="fade-right">
               <a class="nav-link" href="#about">Tentang</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-aos="fade-right" data-aos-delay="150">
               <a class="nav-link" href="#projects">Proyek</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-aos="fade-right" data-aos-delay="250">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item" data-aos="fade-right" data-aos-delay="350">
               <a class="nav-link" href="#contact">Kontak</a>
             </li>
           </ul>
@@ -48,9 +54,9 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron">
-      <img src="img/IMG_0170-1.jpg" alt="Foto Ashari" width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Ashari Rasyid</h1>
-      <p class="lead">Fotographer | Content Creator | Filmografi</p>
+      <img data-aos="zoom-in-down" src="img/IMG_0170-1.jpg" alt="Foto Ashari" width="200" class="rounded-circle img-thumbnail" />
+      <h1 data-aos="zoom-out-up" data-aos-delay="100" class="display-4">Ashari Rasyid</h1>
+      <p data-aos="zoom-out-up" data-aos-delay="500" class="lead">Fotographer | Content Creator | Filmografi</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -64,16 +70,19 @@
     <!-- About -->
     <section id="about">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-3" data-aos="fade-down" data-aos-offset="200">
           <div class="col">
             <h2>Tentang Saya</h2>
           </div>
         </div>
         <div class="row justify-content-center text-center">
-          <div class="col-md-5 fs-5">
-            <p>Perkenalkan nama saya Muh Ashari Rasyid. Aku adalah Mahasiswa S1-Sistem Informasi. Aku lahir di Pasangkayu, Sulawesi Barat. Umurku 18 Tahun. Hobiku mengedit, programming, desain, bermain musik, foto, dll.</p>
+          <div class="col-md-5 fs-5" data-aos="zoom-in-right" data-aos-delay="500">
+            <p>
+              Perkenalkan nama saya Muh Ashari Rasyid. Aku adalah Mahasiswa S1-Sistem Informasi, Universitas Tadulako. Aku lahir di Pasangkayu, Sulawesi Barat. Umurku 18 Tahun. Hobiku mengedit, programming, desain, bermain musik, foto, dll.
+              Cita-citaku ingin menjadi orang sukses 😊
+            </p>
           </div>
-          <div class="col-md-5 fs-5">
+          <div class="col-md-5 fs-5" data-aos="zoom-in-left" data-aos-delay="600">
             <p>
               Kata orang aku pandai mengedit video, foto, main musik, programming, dll. Kalau menurut aku itu nggak. Aku merasakan belum seperti apa yang mereka anggap. Ini masih proses untuk berkembang dan bagi yang mendukungku aku sangat
               berterima Kasih 🙏
@@ -94,14 +103,14 @@
     <!-- Projects -->
     <section id="projects">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-3" data-aos="fade-down" data-aos-offset="200">
           <div class="col">
             <h2>Proyek Saya</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-delay="200">
               <img src="projects-img/20220507_185020.JPG" class="card-img-top" alt="Fotography" />
               <div class="card-body">
                 <p class="card-text">
@@ -112,7 +121,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-delay="300">
               <img src="projects-img/IMG_0699.JPG" class="card-img-top" alt="Content Creator" />
               <div class="card-body">
                 <p class="card-text">
@@ -123,7 +132,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-delay="400">
               <img src="projects-img/IMG_0630.JPG" class="card-img-top" alt="Filmografi" />
               <div class="card-body">
                 <p class="card-text">
@@ -145,10 +154,65 @@
     </section>
     <!-- Akhir Projects -->
 
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3" data-aos="zoom-in-down" data-aos-offset="100">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/Foto Gallery-1.jpg" alt="Gambar1" class="img-fluid gallery-img" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/Foto Gallery-2.jpg" alt="Gambar2" class="img-fluid gallery-img" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/Foto Gallery-3.jpg" alt="Gambar3" class="img-fluid gallery-img" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/Foto Gallery-4.jpg" alt="Gambar4" class="img-fluid gallery-img" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/Foto Gallery-5.jpg" alt="Gambar5" class="img-fluid gallery-img" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/Foto Gallery-6.jpg" alt="Gambar6" class="img-fluid gallery-img" data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/Foto Gallery-7.jpg" alt="Gambar7" class="img-fluid gallery-img" data-aos="fade-down" data-aos-delay="700" data-aos-duration="1000" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/Foto Gallery-8.jpg" alt="Gambar8" class="img-fluid gallery-img" data-aos="fade-down" data-aos-delay="800" data-aos-duration="1000" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Akhir Gallery -->
+
     <!-- Contact -->
     <section id="contact">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-3" data-aos="zoom-out" data-aos-offset="200">
           <div class="col">
             <h2>Kontak Saya</h2>
           </div>
@@ -161,23 +225,23 @@
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             <form name="ard-contact-form">
-              <div class="mb-3">
+              <div class="mb-3" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
                 <label for="name" class="form-label">Nama</label>
                 <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
               </div>
-              <div class="mb-3">
+              <div class="mb-3" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
               </div>
-              <div class="form-floating mb-3">
+              <div class="form-floating mb-3" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
                 <textarea class="form-control" placeholder="Leave a comment here" id="pesan" style="height: 100px" name="pesan"></textarea>
                 <label for="pesan">Pesan</label>
               </div>
-              <div class="mb-3 form-check">
+              <div class="mb-3 form-check" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
                 <input type="checkbox" class="form-check-input" id="ex" />
                 <label class="form-check-label" for="cekmanusia">Aku Bukan Robot</label>
               </div>
-              <button type="submit" class="btn btn-primary btn-kirim">Submit</button>
+              <button type="submit" class="btn btn-primary btn-kirim" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">Submit</button>
               <button class="btn btn-primary btn-loading d-none" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Loading...
@@ -227,9 +291,18 @@
             myAlert.classList.toggle("d-none");
             // Reset form
             form.reset();
-            console.log("Success!", response)
+            console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <!-- Kostum AOS Animate -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 1500,
       });
     </script>
   </body>
